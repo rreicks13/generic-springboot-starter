@@ -1,0 +1,16 @@
+  spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/Spring
+        username: ${DB_USER}
+        password: ${DB_PASS}
+        initialization-mode: always
+    jpa:
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                default_schema: public
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                lob:
+                    non_contextual_creation: true
