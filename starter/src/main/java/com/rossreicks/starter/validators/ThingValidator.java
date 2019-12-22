@@ -2,6 +2,9 @@ package com.rossreicks.starter.validators;
 
 import com.rossreicks.starter.models.APIThing;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class ThingValidator extends ValidatorBase<APIThing>
 {
 
